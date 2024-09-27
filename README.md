@@ -1,3 +1,4 @@
+# Overview
 A simple Computer Algebra System developed in Haskell.
 Parsec is utilised for parsing mathematical expressions.
 
@@ -12,3 +13,52 @@ Current functionality include:
 - Root finding via Newton-Rhapson method with a given epsilon precision.
 
 A cabal file is included for building.
+- - - -
+# Syntax
+For expressions (of the Expr data type) f and g, 
+
+**Addition**
+```
+f :+: g
+```
+**Multiplication**
+```
+f :*: g
+```
+**Subtraction**
+(*Negated Addition*)
+```
+f :+: Const (-1) :*: g
+```
+**Division**
+```
+f :/: g
+```
+**Exponentiation**
+```
+f :^: g
+```
+- - - -
+# Parsing
+Similarly the syntax for parsing is as follows:
+
+**Addition**
+```
+f + g
+```
+**Multiplication**
+```
+f * g
+```
+**Subtraction**
+```
+f - g
+```
+**Division**
+```
+f / g
+```
+**Exponentiation**
+```
+f ^ g
+```
