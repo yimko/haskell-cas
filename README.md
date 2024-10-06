@@ -38,6 +38,12 @@ f :/: g
 ```
 f :^: g
 ```
+**Functions**
+
+For some function f (of the Func type) and input a (Expr type),
+```
+Apply f a
+```
 - - - -
 # Parsing
 Similarly the syntax for parsing is as follows:
@@ -61,4 +67,10 @@ f / g
 **Exponentiation**
 ```
 f ^ g
+```
+**Functions**
+
+For some function f (defined in Func type) and input a (valid Expr type)
+```
+f(a)
 ```
